@@ -21,6 +21,9 @@ export default async function upgradeStaking(truffle): Promise<any> {
 
     console.log('New staking: ' + staking.address);
 
+    await stakingProxy.setImplementation(staking.address);
+    return;
+
     if(network == 'rskTestnet') {
         await stakingProxy.setImplementation(staking.address);
     } else if (network == 'rsk') {

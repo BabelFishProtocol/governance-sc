@@ -1,3 +1,8 @@
 {
-  
+  "Staking": {
+    "address": "0x67FE24C372Dc86BF05695747222597f26e27Fe09"
+  },
+  "StakingProxy": {
+    "address": "0xFd8ea2e5e8591fA791d44731499cDF2e81CD6a41"
+  }
 }
