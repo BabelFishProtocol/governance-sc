@@ -43,7 +43,7 @@ module.exports = {
       network_id: 3,
       gasPrice: 1000000000, // 100 GWei,
       skipDryRun: true,
-      gas: 7000000
+      gas: 70000000
     },
     kovan: {
       provider() {
@@ -63,9 +63,10 @@ module.exports = {
             0, 31)
       },
       network_id: 31,
-      gasPrice: 71680400, // 71GWei,
-      skipDryRun: true,
-      networkCheckTimeout: 1e9
+      gasPrice: 100000000,
+      skipDryRun: false,
+      networkCheckTimeout: 1e9,
+      gas: 6800000
     },
     rsk: {
       provider() {

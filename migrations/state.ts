@@ -22,6 +22,7 @@ async function conditionalDeploy(contract: Truffle.Contract, key: string, deploy
     }
     console.log('Conditional deploy: ', key);
     if (!state[key] || !state[key].address) {
+        console.log('Deploying ' + key + '...');
         const c = await deployfunc();
         state[key] = { address: c.address };
         await writeState(state);
