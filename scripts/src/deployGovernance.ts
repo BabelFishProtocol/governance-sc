@@ -27,7 +27,7 @@ export default async function deployTestFish(truffle): Promise<any> {
 
     const VestingLogic: VestingLogicContract = artifacts.require("VestingLogic");
     const vestingLogic =
-        await state.conditionalDeploy(VestingLogic, 'VestingFactory',
+        await state.conditionalDeploy(VestingLogic, 'VestingLogic',
             () => VestingLogic.new());
 
     const VestingFactory: VestingFactoryContract = artifacts.require("VestingFactory");
@@ -43,7 +43,7 @@ export default async function deployTestFish(truffle): Promise<any> {
     const Timelock: TimelockContract = artifacts.require("Timelock");
     const timelock =
         await state.conditionalDeploy(Timelock, 'Timelock',
-            () => Timelock.new(admin, 3 * 60 * 60 * 1000));
+            () => Timelock.new(admin, 3 * 60 * 60));
 
     const VestingRegistry3: VestingRegistry3Contract = artifacts.require("VestingRegistry3");
     const vestingRegistry3 =

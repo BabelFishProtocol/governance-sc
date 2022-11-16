@@ -1,5 +1,26 @@
 {
   "TestTokenLimited": {
     "address": "0xc759D23222791108872De8eb033D132f08692BfE"
+  },
+  "VestingLogic": {
+    "address": "0x79823CF2F1Bd8e9eA19C7F50b49F28ABDaED294E"
+  },
+  "VestingFactory": {
+    "address": "0x7eFe346b7Ed9A65B94A9a37e7CE4384289c8873c"
+  },
+  "Staking": {
+    "address": "0x6Ad18880798812951373b8bEaA88B450c865093a"
+  },
+  "Timelock": {
+    "address": "0x1547510c48eb322a2199dcf2EA837e4E2870Ebd6"
+  },
+  "VestingRegistry3": {
+    "address": "0xEB0AAD069b452563628CE539df0Da531E2313148"
+  },
+  "StakingProxy": {
+    "address": "0x34a01F53432e2105B7361Aee031F3De629eb7211"
+  },
+  "GovernorAlpha": {
+    "address": "0x2e9045e9120b71DAb0f75368a617b81958A557bF"
   }
 }
