@@ -9,6 +9,14 @@ const testnetAccounts = {
     passphrase: "",
 };
 
+const mainnetAccounts = {
+    mnemonic: "",
+    path: "m/44'/60'/0'/0",
+    initialIndex: 0,
+    count: 20,
+    passphrase: "",
+};
+
 export default {
     networks: {
         hardhat: { allowUnlimitedContractSize: true },
@@ -22,6 +30,14 @@ export default {
             tags: ["testnet"],
             //timeout: 20000, // increase if needed; 20000 is the default value
             //allowUnlimitedContractSize, //EIP170 contrtact size restriction temporal testnet workaround
+        },
+        rsk: {
+            url: "https://public-node.rsk.co/",
+            accounts: mainnetAccounts,
+            chainId: 30,
+            confirmations: 4,
+            gasMultiplier: 1.25,
+            tags: ["mainnet"],
         },
     },
     solidity: {
